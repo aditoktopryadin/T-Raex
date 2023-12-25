@@ -1,0 +1,24 @@
+CRITICAL - 2023-12-11 02:39:15 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\v_detail_ikp.php on line 39.
+ 1 APPPATH\Views\admin\v_detail_ikp.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\web doc\\pmkp\\app\\Views\\admin\\v_detail_ikp.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\web doc\\pmkp\\app\\Views\\admin\\v_detail_ikp.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_detail_ikp', [], true)
+ 5 APPPATH\Controllers\Main.php(43): view('admin/v_detail_ikp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Main->detail_ikp('google.com')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\web doc\\pmkp\\public\\index.php')
+CRITICAL - 2023-12-11 03:02:14 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\v_detail_ikp.php on line 39.
+ 1 APPPATH\Views\admin\v_detail_ikp.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\web doc\\pmkp\\app\\Views\\admin\\v_detail_ikp.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('D:\\web doc\\pmkp\\app\\Views\\admin\\v_detail_ikp.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_detail_ikp', [], true)
+ 5 APPPATH\Controllers\Main.php(43): view('admin/v_detail_ikp', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Main->detail_ikp('index3.html')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Main))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\web doc\\pmkp\\public\\index.php')

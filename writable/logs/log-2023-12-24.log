@@ -1,0 +1,11 @@
+CRITICAL - 2023-12-24 09:50:05 --> Undefined constant " "
+in APPPATH\Views\view_admin\admin_main.php on line 74.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('view_admin/admin_main', [], true)
+ 4 APPPATH\Controllers\Admin.php(11): view('view_admin/admin_main')
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ACER\\Downloads\\Dtraex\\Dtraex\\public\\index.php')
