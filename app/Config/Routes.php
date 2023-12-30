@@ -30,7 +30,17 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Admin::index');
+// Routes User
+$routes->get('/admin/user', 'Admin::user');
+$routes->post('/admin/add_user', 'Admin::save_user');
+$routes->post('/admin/edit_user/(:any)', 'Admin::edit_user/$1');
+$routes->get('/admin/delete_user/(:num)', 'Admin::delete_user/$1');
+// Routes Rute
 $routes->get('/admin/rute', 'Admin::rute');
+$routes->post('/admin/add_rute', 'Admin::save_rute');
+$routes->post('/admin/edit_rute/(:any)', 'Admin::edit_rute/$1');
+$routes->get('/admin/delete_rute/(:num)', 'Admin::delete_rute/$1');
+
 $routes->get('/admin/stasiun', 'Admin::stasiun');
 /*
  * --------------------------------------------------------------------

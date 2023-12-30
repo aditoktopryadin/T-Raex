@@ -1,0 +1,6 @@
+.center-item{
+    display: flex; 
+    align-item:center; 
+    justify-content: left; 
+    gap: 5px;
+}

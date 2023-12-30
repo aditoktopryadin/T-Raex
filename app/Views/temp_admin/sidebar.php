@@ -37,7 +37,9 @@
                     <ul class="menu">
                         <li class="sidebar-title">Menu</li>
 
-                        <li class="sidebar-item active ">
+                        <li class="sidebar-item <?php if ($menu == 'Dashboard') {
+                                                    echo 'active';
+                                                } ?>">
                             <a href="<?= base_url('/') ?>" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
@@ -46,18 +48,33 @@
 
                         <li class="sidebar-title">Setup Data</li>
 
-                        <li class="sidebar-item  has-sub">
+                        <li class="sidebar-item <?php if ($menu == 'User') {
+                                                    echo 'active';
+                                                } ?>">
+                            <a href="<?= base_url('admin/user') ?>" class='sidebar-link'>
+                                <i class="iconly-boldProfile"></i>
+                                <span>User</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item <?php if ($menu == 'Kereta') {
+                                                    echo 'active';
+                                                } ?>  has-sub">
                             <a href="#" class='sidebar-link'>
                                 <i class="bi bi-stack"></i>
                                 <span>Kereta</span>
                             </a>
 
                             <ul class="submenu ">
-                                <li class="submenu-item  ">
+                                <li class="submenu-item  <?php if ($submenu == 'Rute') {
+                                                                echo 'active';
+                                                            } ?>">
                                     <a href="<?= base_url('admin/rute') ?>" class="submenu-link">Rute</a>
                                 </li>
 
-                                <li class="submenu-item  ">
+                                <li class="submenu-item  <?php if ($submenu == 'Stasiun') {
+                                                                echo 'active';
+                                                            } ?>">
                                     <a href="<?= base_url('admin/stasiun') ?>" class="submenu-link">Stasiun</a>
                                 </li>
                             </ul>
