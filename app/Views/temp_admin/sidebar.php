@@ -81,6 +81,17 @@
                         </li>
 
                     </ul>
+                    <div class="bg-danger" style="position: absolute; bottom:0; height:100px; width: 100%;">
+                        <div class="d-flex align-items-center">
+                            <div class="avatar avatar-xl">
+                                <img src="<?= base_url('assets/') ?>compiled/jpg/1.jpg" alt="Face 1">
+                            </div>
+                            <div class="ms-3 name">
+                                <h5 class="font-bold">John Duck</h5>
+                                <h6 class="text-muted mb-0">@johnducky</h6>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
