@@ -1,6 +1,24 @@
-.center-item{
-    display: flex; 
-    align-item:center; 
-    justify-content: left; 
+.center-item {
+    display: flex;
+    align-item: center;
+    justify-content: left;
     gap: 5px;
+}
+
+.center-item-mid {
+    display: flex;
+    align-item: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.logout {
+    font-size: 18px;
+    transition: transform 0.5s;
+}
+
+.logout:hover {
+    font-size: 20px;
+    cursor: pointer;
+    transition: translateX(5px);
 }

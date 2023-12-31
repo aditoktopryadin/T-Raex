@@ -34,6 +34,22 @@
                     </div>
                 </div>
                 <div class="sidebar-menu">
+                    <div class="card">
+                        <div class="card-body py-1 px-4">
+                            <div class="d-flex align-items-center">
+                                <div class="avatar avatar-xl">
+                                    <img src="<?= base_url('assets/') ?>compiled/jpg/1.jpg" alt="Face 1">
+                                </div>
+                                <div class="ms-3 name">
+                                    <h5 class="font-bold"><?= session('nama') ?></h5>
+                                    <h6 class="text-muted mb-0">@<?= session('uname') ?></h6>
+                                </div>
+                                <div class="ms-3 name" onclick="swalLogout()">
+                                    <i class="bi bi-box-arrow-left logout"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <ul class="menu">
                         <li class="sidebar-title">Menu</li>
 
@@ -81,24 +97,10 @@
                         </li>
 
                     </ul>
-                    <div class="" style="position: absolute; bottom:0; height: 110px; width: 100%;">
-                        <div class="card">
-                            <div class="card-body py-4 px-4">
-                                <div class="d-flex align-items-center">
-                                    <div class="avatar avatar-xl">
-                                        <img src="<?= base_url('assets/') ?>compiled/jpg/1.jpg" alt="Face 1">
-                                    </div>
-                                    <div class="ms-3 name">
-                                        <h5 class="font-bold">Naufal Habib</h5>
-                                        <h6 class="text-muted mb-0">@FallenNight</h6>
-                                    </div>
-                                    <div class="ms-3 name">
-                                        <i class="bi bi-circle-fill" style="color:green"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
+                    <!-- <div class="bot-frag">
+                        
+                    </div> -->
                 </div>
             </div>
         </div>
