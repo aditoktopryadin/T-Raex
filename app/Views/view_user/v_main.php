@@ -16,8 +16,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-white sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="<?= base_url('assets/images/') ?>logo-dark.svg" alt="">
+            <a class="navbar-brand fw-bold" href="#">
+                <!-- <img src="<?= base_url('assets/images/') ?>logo-dark.svg" alt=""> -->
+                T-Raex
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
