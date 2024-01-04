@@ -136,4 +136,22 @@ class Admin extends BaseController
         ];
         return view('view_admin/v_stasiun', $data);
     }
+
+    public function jadwal()
+    {
+        $data = [
+            'menu' => 'Kereta',
+            'submenu' => 'Jadwal'
+        ];
+        return view('view_admin/v_jadwal', $data);
+    }
+
+    public function kereta()
+    {
+        $data = [
+            'menu' => 'Kereta',
+            'submenu' => 'Kereta'
+        ];
+        return view('view_admin/v_kereta', $data);
+    }
 }

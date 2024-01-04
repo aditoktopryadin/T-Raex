@@ -82,16 +82,25 @@
                             </a>
 
                             <ul class="submenu ">
-                                <li class="submenu-item  <?php if ($submenu == 'Rute') {
-                                                                echo 'active';
-                                                            } ?>">
-                                    <a href="<?= base_url('admin/rute') ?>" class="submenu-link">Rute</a>
-                                </li>
-
                                 <li class="submenu-item  <?php if ($submenu == 'Stasiun') {
                                                                 echo 'active';
                                                             } ?>">
-                                    <a href="<?= base_url('admin/stasiun') ?>" class="submenu-link">Stasiun</a>
+                                    <a href="<?= base_url('admin/stasiun') ?>" class="submenu-link">Data Stasiun</a>
+                                </li>
+                                <li class="submenu-item  <?php if ($submenu == 'Stasiun') {
+                                                                echo 'active';
+                                                            } ?>">
+                                    <a href="<?= base_url('admin/kereta') ?>" class="submenu-link">Data Kereta</a>
+                                </li>
+                                <li class="submenu-item  <?php if ($submenu == 'Rute') {
+                                                                echo 'active';
+                                                            } ?>">
+                                    <a href="<?= base_url('admin/rute') ?>" class="submenu-link">Data Rute</a>
+                                </li>
+                                <li class="submenu-item  <?php if ($submenu == 'Stasiun') {
+                                                                echo 'active';
+                                                            } ?>">
+                                    <a href="<?= base_url('admin/jadwal') ?>" class="submenu-link">Data Jadwal</a>
                                 </li>
                             </ul>
                         </li>

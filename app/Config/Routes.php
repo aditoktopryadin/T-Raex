@@ -48,6 +48,12 @@ $routes->post('/admin/edit_rute/(:any)', 'Admin::edit_rute/$1');
 $routes->get('/admin/delete_rute/(:num)', 'Admin::delete_rute/$1');
 
 $routes->get('/admin/stasiun', 'Admin::stasiun');
+
+// Routes Jadwal
+$routes->get('/admin/jadwal', 'Admin::jadwal');
+
+// Routes Kereta
+$routes->get('/admin/kereta', 'Admin::kereta');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
