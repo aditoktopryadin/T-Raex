@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `tb_rute` (
   `id` int NOT NULL,
   `n_rute` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tb_rute`
@@ -57,7 +57,7 @@ CREATE TABLE `tb_users` (
   `n_user` varchar(100) NOT NULL,
   `uname` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tb_users`
