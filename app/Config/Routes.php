@@ -58,8 +58,8 @@ $routes->get('/admin/delete_stasiun/(:num)', 'Admin::delete_stasiun/$1');
 // Routes Jadwal
 $routes->get('/admin/jadwal', 'Admin::jadwal');
 
-// Routes Kereta
-$routes->get('/admin/kereta', 'Admin::kereta');
+// Routes Urutan
+$routes->get('/admin/urutan', 'Admin::urutan');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

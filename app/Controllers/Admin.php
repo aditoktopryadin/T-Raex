@@ -185,12 +185,12 @@ class Admin extends BaseController
         return view('view_admin/v_jadwal', $data);
     }
 
-    public function kereta()
+    public function urutan()
     {
         $data = [
             'menu' => 'Kereta',
-            'submenu' => 'Kereta'
+            'submenu' => 'Urutan'
         ];
-        return view('view_admin/v_kereta', $data);
+        return view('view_admin/v_urutan', $data);
     }
 }
