@@ -87,7 +87,7 @@
                                                             } ?>">
                                     <a href="<?= base_url('admin/stasiun') ?>" class="submenu-link">Data Stasiun</a>
                                 </li>
-                                <li class="submenu-item  <?php if ($submenu == 'Stasiun') {
+                                <li class="submenu-item  <?php if ($submenu == 'Kereta') {
                                                                 echo 'active';
                                                             } ?>">
                                     <a href="<?= base_url('admin/kereta') ?>" class="submenu-link">Data Kereta</a>
@@ -97,7 +97,7 @@
                                                             } ?>">
                                     <a href="<?= base_url('admin/rute') ?>" class="submenu-link">Data Rute</a>
                                 </li>
-                                <li class="submenu-item  <?php if ($submenu == 'Stasiun') {
+                                <li class="submenu-item  <?php if ($submenu == 'Jadwal') {
                                                                 echo 'active';
                                                             } ?>">
                                     <a href="<?= base_url('admin/jadwal') ?>" class="submenu-link">Data Jadwal</a>

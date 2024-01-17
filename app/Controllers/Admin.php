@@ -83,6 +83,15 @@ class Admin extends BaseController
         return redirect()->to('/admin/user');
     }
 
+    public function stasiun()
+    {
+        $data = [
+            'menu' => 'Kereta',
+            'submenu' => 'Stasiun'
+        ];
+        return view('view_admin/v_stasiun', $data);
+    }
+
     public function rute()
     {
         $data_rute = $this->rute->findAll();
@@ -128,14 +137,6 @@ class Admin extends BaseController
         return redirect()->to('/admin/rute');
     }
 
-    public function stasiun()
-    {
-        $data = [
-            'menu' => 'Kereta',
-            'submenu' => 'Stasiun'
-        ];
-        return view('view_admin/v_stasiun', $data);
-    }
 
     public function jadwal()
     {

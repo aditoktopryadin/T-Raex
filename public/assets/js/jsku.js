@@ -50,6 +50,8 @@ function swalLogout() {
         confirmButtonText: "Keluar",
         cancelButtonText: "Batal"
     }).then((result) => {
-        window.location.href = '/logout'
+        if(result.isConfirmed){
+            window.location.href = '/logout'
+        }
     });
 }
