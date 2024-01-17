@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Jan 17, 2024 at 11:06 AM
--- Server version: 8.0.30
--- PHP Version: 8.1.10
+-- Host: 127.0.0.1
+-- Generation Time: Jan 17, 2024 at 06:47 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,8 +28,8 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tb_rute` (
-  `id` int NOT NULL,
-  `n_rute` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL
+  `id` int(11) NOT NULL,
+  `n_rute` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -53,9 +53,9 @@ INSERT INTO `tb_rute` (`id`, `n_rute`) VALUES
 --
 
 CREATE TABLE `tb_stasiun` (
-  `id` int NOT NULL,
+  `id` int(11) NOT NULL,
   `n_stasiun` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `tb_stasiun`
@@ -76,105 +76,130 @@ INSERT INTO `tb_stasiun` (`id`, `n_stasiun`) VALUES
 (12, 'GAMBIR'),
 (13, 'GONDANGDIA'),
 (14, 'CIKINI'),
-(15, 'MANGGARAI'),
-(16, 'TEBET'),
-(17, 'CAWANG'),
-(18, 'DUREN KALIBATA'),
-(19, 'PASAR MINGGU BARU'),
-(20, 'PASAR MINGGU '),
-(21, 'TANJUNG BARAT'),
-(22, 'LENTENG AGUNG'),
-(23, 'UNIV. PANCASILA'),
-(24, 'UNIV. INDONESIA'),
-(25, 'PONDOK CINA'),
-(26, 'DEPOK BARU'),
-(27, 'DEPOK  '),
-(28, 'CITAYAM'),
-(29, 'BOJONG GEDE'),
-(30, 'CILEBUT'),
-(31, 'SUKARESMI'),
-(32, 'BOGOR'),
-(33, 'PONDOK RAJEG'),
-(34, 'CIBINONG'),
-(35, 'GUNUNG PUTRI'),
-(36, 'NAMBO'),
-(37, 'JATINEGARA'),
-(38, 'PONDOK JATI'),
-(39, 'KRAMAT'),
-(40, 'GANG SENTIONG'),
-(41, 'PASAR SENEN'),
-(42, 'KEMAYORAN'),
-(43, 'RAJAWALI'),
-(44, 'KAMPUNG BANDAN'),
-(45, 'ANGKE'),
-(46, 'DURI'),
-(47, 'TANAH ABANG'),
-(48, 'KARET'),
-(49, 'BNI CITY'),
-(50, 'SUDIRMAN'),
-(51, 'MANGGARAI'),
-(52, 'MATRAMAN'),
-(53, 'JATINEGARA'),
-(54, 'KLENDER'),
-(55, 'BUARAN'),
-(56, 'KLENDER BARU'),
-(57, 'CAKUNG'),
-(58, 'KRANJI'),
-(59, 'BEKASI'),
-(60, 'BEKASI TIMUR'),
-(61, 'TAMBUN'),
-(62, 'CIBITUNG'),
-(63, 'METLAND TELAGA MURNI'),
-(64, 'CIKARANG'),
-(65, 'TANAH ABANG'),
-(66, 'PALMERAH'),
-(67, 'KEBAYORAN'),
-(68, 'PONDOK RANJI'),
-(69, 'JURANG MANGU'),
-(70, 'SUDIMARA'),
-(71, 'RAWA BUNTU'),
-(72, 'SERPONG'),
-(73, 'CISAUK'),
-(74, 'CICAYUR'),
-(75, 'JATAKE'),
-(76, 'PARUNG PANJANG'),
-(77, 'PARAYASA'),
-(78, 'CILEJIT'),
-(79, 'DARU'),
-(80, 'TENJO'),
-(81, 'TIGARAKSA PODOMORO'),
-(82, 'TIGARAKSA  '),
-(83, 'CIKOYA'),
-(84, 'MAJA'),
-(85, 'CITERAS'),
-(86, 'RANGKASBITUNG'),
-(87, 'JAKARTA KOTA'),
-(88, 'KAMPUNG BANDAN'),
-(89, 'ANCOL'),
-(90, 'JIS'),
-(91, 'TANJUNG PRIOK'),
-(92, 'DURI'),
-(93, 'GROGOL'),
-(94, 'PESING'),
-(95, 'TAMAN KOTA'),
-(96, 'BOJONG INDAH'),
-(97, 'RAWA BUAYA'),
-(98, 'KALI DERES'),
-(99, 'PORIS'),
-(100, 'BATU CEPER'),
-(101, 'TANAH TINGGI'),
-(102, 'TANGERANG'),
-(103, 'RANGKASBITUNG'),
-(104, 'JAMBUBARU'),
-(105, 'CATANG'),
-(106, 'CIKEUSAL'),
-(107, 'WALANTAKA'),
-(108, 'SERANG'),
-(109, 'KARANGANTU'),
-(110, 'TONJONGBARU'),
-(111, 'CILEGON'),
-(112, 'KRENCENG'),
-(113, 'MERAK');
+(15, 'TEBET'),
+(16, 'CAWANG'),
+(17, 'DUREN KALIBATA'),
+(18, 'PASAR MINGGU BARU'),
+(19, 'PASAR MINGGU '),
+(20, 'TANJUNG BARAT'),
+(21, 'LENTENG AGUNG'),
+(22, 'UNIV. PANCASILA'),
+(23, 'UNIV. INDONESIA'),
+(24, 'PONDOK CINA'),
+(25, 'DEPOK BARU'),
+(26, 'DEPOK  '),
+(27, 'CITAYAM'),
+(28, 'BOJONG GEDE'),
+(29, 'CILEBUT'),
+(30, 'SUKARESMI'),
+(31, 'BOGOR'),
+(32, 'PONDOK RAJEG'),
+(33, 'CIBINONG'),
+(34, 'GUNUNG PUTRI'),
+(35, 'NAMBO'),
+(36, 'JATINEGARA'),
+(37, 'PONDOK JATI'),
+(38, 'KRAMAT'),
+(39, 'GANG SENTIONG'),
+(40, 'PASAR SENEN'),
+(41, 'KEMAYORAN'),
+(42, 'RAJAWALI'),
+(43, 'KAMPUNG BANDAN'),
+(44, 'ANGKE'),
+(45, 'KARET'),
+(46, 'SUDIRMAN'),
+(47, 'MATRAMAN'),
+(48, 'JATINEGARA'),
+(49, 'KLENDER'),
+(50, 'BUARAN'),
+(51, 'KLENDER BARU'),
+(52, 'CAKUNG'),
+(53, 'KRANJI'),
+(54, 'BEKASI'),
+(55, 'BEKASI TIMUR'),
+(56, 'TAMBUN'),
+(57, 'CIBITUNG'),
+(58, 'METLAND TELAGA MURNI'),
+(59, 'CIKARANG'),
+(60, 'PALMERAH'),
+(61, 'KEBAYORAN'),
+(62, 'PONDOK RANJI'),
+(63, 'JURANG MANGU'),
+(64, 'SUDIMARA'),
+(65, 'RAWA BUNTU'),
+(66, 'SERPONG'),
+(67, 'CISAUK'),
+(68, 'CICAYUR'),
+(69, 'JATAKE'),
+(70, 'PARUNG PANJANG'),
+(71, 'PARAYASA'),
+(72, 'CILEJIT'),
+(73, 'DARU'),
+(74, 'TENJO'),
+(75, 'TIGARAKSA PODOMORO'),
+(76, 'TIGARAKSA  '),
+(77, 'CIKOYA'),
+(78, 'MAJA'),
+(79, 'CITERAS'),
+(80, 'RANGKASBITUNG'),
+(81, 'JAKARTA KOTA'),
+(82, 'ANCOL'),
+(83, 'JIS'),
+(84, 'TANJUNG PRIOK'),
+(85, 'GROGOL'),
+(86, 'PESING'),
+(87, 'TAMAN KOTA'),
+(88, 'BOJONG INDAH'),
+(89, 'RAWA BUAYA'),
+(90, 'KALI DERES'),
+(91, 'PORIS'),
+(92, 'TANAH TINGGI'),
+(93, 'TANGERANG'),
+(94, 'JAMBUBARU'),
+(95, 'CATANG'),
+(96, 'CIKEUSAL'),
+(97, 'WALANTAKA'),
+(98, 'SERANG'),
+(99, 'KARANGANTU'),
+(100, 'TONJONGBARU'),
+(101, 'CILEGON'),
+(102, 'KRENCENG'),
+(103, 'MERAK');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_urutan`
+--
+
+CREATE TABLE `tb_urutan` (
+  `id` int(11) NOT NULL,
+  `id_stasiun` int(11) DEFAULT NULL,
+  `id_rute` int(11) DEFAULT NULL,
+  `urutan` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tb_urutan`
+--
+
+INSERT INTO `tb_urutan` (`id`, `id_stasiun`, `id_rute`, `urutan`) VALUES
+(1, 93, 7, 1),
+(2, 92, 7, 2),
+(3, 5, 7, 3),
+(4, 91, 7, 4),
+(5, 90, 7, 5),
+(6, 89, 7, 6),
+(7, 88, 7, 7),
+(8, 87, 7, 8),
+(9, 86, 7, 9),
+(10, 85, 7, 10),
+(11, 4, 7, 11),
+(12, 1, 8, 1),
+(13, 5, 8, 2),
+(14, 4, 8, 3),
+(15, 2, 8, 4),
+(16, 1, 8, 5);
 
 -- --------------------------------------------------------
 
@@ -183,10 +208,10 @@ INSERT INTO `tb_stasiun` (`id`, `n_stasiun`) VALUES
 --
 
 CREATE TABLE `tb_users` (
-  `id` int NOT NULL,
-  `n_user` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `uname` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `password` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL
+  `id` int(11) NOT NULL,
+  `n_user` varchar(100) NOT NULL,
+  `uname` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -215,6 +240,14 @@ ALTER TABLE `tb_stasiun`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `tb_urutan`
+--
+ALTER TABLE `tb_urutan`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `Relasi_Stasiun` (`id_stasiun`),
+  ADD KEY `Relasi_Rute` (`id_rute`);
+
+--
 -- Indexes for table `tb_users`
 --
 ALTER TABLE `tb_users`
@@ -228,19 +261,36 @@ ALTER TABLE `tb_users`
 -- AUTO_INCREMENT for table `tb_rute`
 --
 ALTER TABLE `tb_rute`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `tb_stasiun`
 --
 ALTER TABLE `tb_stasiun`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=114;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=114;
+
+--
+-- AUTO_INCREMENT for table `tb_urutan`
+--
+ALTER TABLE `tb_urutan`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `tb_users`
 --
 ALTER TABLE `tb_users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `tb_urutan`
+--
+ALTER TABLE `tb_urutan`
+  ADD CONSTRAINT `Relasi_Rute` FOREIGN KEY (`id_rute`) REFERENCES `tb_rute` (`id`),
+  ADD CONSTRAINT `Relasi_Stasiun` FOREIGN KEY (`id_stasiun`) REFERENCES `tb_stasiun` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
