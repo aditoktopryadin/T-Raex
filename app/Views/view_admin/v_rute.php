@@ -89,15 +89,15 @@
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <form method="post" id="editUsernya<?= $r['id']; ?>" action="<?= base_url('admin/edit_rute/' . $r['id']); ?>">
+                                                        <form method="post" id="editRute<?= $r['id']; ?>" action="<?= base_url('admin/edit_rute/' . $r['id']); ?>">
                                                             <div class="mb-3">
-                                                                <label class="form-label">Username</label>
+                                                                <label class="form-label">Nama Rute</label>
                                                                 <input type="text" name="n_rute" value="<?= $r['n_rute']; ?>" class="form-control" placeholder="Ketikan Username">
                                                             </div>
                                                         </form>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="submit" form="editUsernya<?= $r['id']; ?>" class="btn btn-primary">Simpan</button>
+                                                        <button type="submit" form="editRute<?= $r['id']; ?>" class="btn btn-primary">Simpan</button>
                                                     </div>
                                                 </div>
                                             </div>

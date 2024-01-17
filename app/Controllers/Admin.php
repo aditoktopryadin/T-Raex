@@ -5,15 +5,17 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\User;
 use App\Models\Rute;
+use App\Models\Stasiun;
 
 class Admin extends BaseController
 {
-    protected $user, $rute, $db;
+    protected $user, $rute, $stasiun, $db;
     public function __construct()
     {
         $this->db = db_connect();
         $this->user = new User();
         $this->rute = new Rute();
+        $this->stasiun = new Stasiun();
     }
 
     public function index()
@@ -85,11 +87,47 @@ class Admin extends BaseController
 
     public function stasiun()
     {
+        $data_stasiun = $this->stasiun->findAll();
         $data = [
+            'stasiun' => $data_stasiun,
             'menu' => 'Kereta',
             'submenu' => 'Stasiun'
         ];
         return view('view_admin/v_stasiun', $data);
+    }
+
+    public function save_stasiun()
+    {
+        $getStasiun = $this->request->getPost();
+        $this->stasiun->save([
+            'n_stasiun' => $getStasiun['n_stasiun'],
+        ]);
+
+        session()->setFlashdata('norm_pesan', 'Menambahkan Data Stasiun');
+
+        return redirect()->to('admin/stasiun');
+    }
+
+    public function edit_stasiun($id)
+    {
+        $getStasiun = $this->request->getPost();
+        $this->stasiun->save([
+            'id' => $id,
+            'n_stasiun' => $getStasiun['n_stasiun']
+        ]);
+
+        session()->setFlashdata('norm_pesan', 'Edit Data Stasiun');
+
+        return redirect()->to('admin/stasiun');
+    }
+
+    public function delete_stasiun($id)
+    {
+        $this->stasiun->delete($id);
+
+        session()->setFlashdata('norm_pesan', 'Hapus Data Stasiun');
+
+        return redirect()->to('/admin/stasiun');
     }
 
     public function rute()

@@ -49,7 +49,11 @@ $routes->post('/admin/add_rute', 'Admin::save_rute');
 $routes->post('/admin/edit_rute/(:any)', 'Admin::edit_rute/$1');
 $routes->get('/admin/delete_rute/(:num)', 'Admin::delete_rute/$1');
 
+// Routes Stasiun
 $routes->get('/admin/stasiun', 'Admin::stasiun');
+$routes->post('/admin/add_stasiun', 'Admin::save_stasiun');
+$routes->post('/admin/edit_stasiun/(:any)', 'Admin::edit_stasiun/$1');
+$routes->get('/admin/delete_stasiun/(:num)', 'Admin::delete_stasiun/$1');
 
 // Routes Jadwal
 $routes->get('/admin/jadwal', 'Admin::jadwal');
