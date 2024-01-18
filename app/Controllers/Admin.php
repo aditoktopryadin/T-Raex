@@ -6,16 +6,18 @@ use App\Controllers\BaseController;
 use App\Models\User;
 use App\Models\Rute;
 use App\Models\Stasiun;
+use App\Models\Urutan;
 
 class Admin extends BaseController
 {
-    protected $user, $rute, $stasiun, $db;
+    protected $user, $rute, $stasiun, $db, $urutan;
     public function __construct()
     {
         $this->db = db_connect();
         $this->user = new User();
         $this->rute = new Rute();
         $this->stasiun = new Stasiun();
+        $this->urutan = new Urutan();
     }
 
     public function index()
@@ -187,10 +189,46 @@ class Admin extends BaseController
 
     public function urutan()
     {
+        $data_urutan = $this->urutan->findAll();
         $data = [
+            'urutan' => $data_urutan,
             'menu' => 'Kereta',
             'submenu' => 'Urutan'
         ];
         return view('view_admin/v_urutan', $data);
+    }
+
+    public function save_urutan()
+    {
+        $getUrutan = $this->request->getPost();
+        $this->urutan->save([
+            'urutan' => $getUrutan['urutan'],
+        ]);
+
+        session()->setFlashdata('norm_pesan', 'Menambahkan Data Urutan');
+
+        return redirect()->to('admin/urutan');
+    }
+
+    public function edit_urutan($id)
+    {
+        $getUrutan = $this->request->getPost();
+        $this->urutan->save([
+            'id' => $id,
+            'urutan' => $getUrutan['urutan']
+        ]);
+
+        session()->setFlashdata('norm_pesan', 'Edit Data Urutan');
+
+        return redirect()->to('admin/urutan');
+    }
+
+    public function delete_urutan($id)
+    {
+        $this->urutan->delete($id);
+
+        session()->setFlashdata('norm_pesan', 'Hapus Data Urutan');
+
+        return redirect()->to('/admin/urutan');
     }
 }

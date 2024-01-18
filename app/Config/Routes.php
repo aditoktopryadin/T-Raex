@@ -61,6 +61,9 @@ $routes->get('/admin/jadwal', 'Admin::jadwal');
 
 // Routes Urutan
 $routes->get('/admin/urutan', 'Admin::urutan');
+$routes->post('/admin/add_urutan', 'Admin::save_urutan');
+$routes->post('/admin/edit_urutan/(:any)', 'Admin::edit_urutan/$1');
+$routes->get('/admin/delete_urutan/(:num)', 'Admin::delete_urutan/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

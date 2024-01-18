@@ -13,7 +13,7 @@ class Urutan extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id_stasiun'];
+    protected $allowedFields    = ['id_stasiun','id_rute','urutan'];
 
     // Dates
     protected $useTimestamps = false;
@@ -38,17 +38,4 @@ class Urutan extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
-
-    public function getRouteAndOrder($startStation, $endStation)
-    {
-        $routesModel = new \App\Models\Urutan();
-        $rute = $routesModel->where('id_stasiun', $startStation)
-                             ->orWhere('id_stasiun', $endStation)
-                             ->orderBy('id_rute, urutan', 'ASC')
-                             ->findAll();
-
-        return $rute;
-    }
-
-    
 }
