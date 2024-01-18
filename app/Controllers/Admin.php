@@ -189,9 +189,15 @@ class Admin extends BaseController
 
     public function urutan()
     {
-        $data_urutan = $this->urutan->findAll();
+        $builder = $this->db->table('tb_urutan');
+        $builder->select('*');
+        $builder->join('tb_stasiun', 'tb_stasiun.id = tb_urutan.id_stasiun');
+        $builder->join('tb_rute', 'tb_rute.id = tb_urutan.id_rute');
+        $query = $builder->get()->getResultArray();
+        // var_dump($query);
+        // // $data_urutan = $this->urutan->findAll();
         $data = [
-            'urutan' => $data_urutan,
+            'urutan' => $query,
             'menu' => 'Kereta',
             'submenu' => 'Urutan'
         ];

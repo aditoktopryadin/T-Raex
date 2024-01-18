@@ -87,8 +87,8 @@
                             ?>
                                 <tr>
                                     <td><?= $no ?></td>
-                                    <td><?= $s['id_stasiun'] ?></td>
-                                    <td><?= $s['id_rute'] ?></td>
+                                    <td><?= $s['n_stasiun'] ?></td>
+                                    <td><?= $s['n_rute'] ?></td>
                                     <td><?= $s['urutan'] ?></td>
                                     <td class="center-item">
                                         <button class="badge bg-warning" style="border: none;" data-bs-toggle="modal" data-bs-target="#editUser<?= $s['id']; ?>"><i class="bi bi-pencil-square"></i></button>
