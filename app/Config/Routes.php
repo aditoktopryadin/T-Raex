@@ -31,6 +31,7 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 // Main Routes
 $routes->get('/', 'Main::index');
+$routes->post('/user/cari', 'Main::cari');
 // admin routes
 $routes->get('/admin', 'Admin::index');
 // Auth

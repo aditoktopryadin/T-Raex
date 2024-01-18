@@ -93,5 +93,5 @@ define('EVENT_PRIORITY_NORMAL', 100);
  */
 define('EVENT_PRIORITY_HIGH', 10);
 
-$http = isset($_SERVER['HTTPS']) ? 'https://' : 'http://';
-define('BASE', 'http://' . $_SERVER['SERVER_NAME']);
+// $http = isset($_SERVER['HTTPS']) ? 'https://' : 'http://';
+// define('BASE', 'http://' . $_SERVER['SERVER_NAME']);

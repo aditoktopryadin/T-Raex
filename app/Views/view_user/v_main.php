@@ -14,6 +14,7 @@
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
     <!-- Navbar -->
+    
     <nav class="navbar navbar-expand-lg bg-white sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">
@@ -71,28 +72,30 @@
                     <h5 class="text-white mt-3 mb-4" data-aos="fade-right">Solusi mudah kamu untuk akses KRL</h5>
                     <div class="card mx-auto d-block" style="max-width: 950px;" data-aos="fade-up" data-aos-delay="50">
                         <div class="card-body p-4">
+                        <form method="post" action="<?= base_url('user/cari'); ?>">
                             <div class="row">
                                 <div class="col-lg-5">
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select class="form-select" aria-label="Default select example" name="lok_awal">
                                         <option selected>Tujuan Awal</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                        <?php foreach ($stasiun as $row): ?>
+                                            <option value="<?= $row['id']; ?>"><?= $row['n_stasiun']; ?></option>
+                                        <?php endforeach; ?>
                                     </select>
                                 </div>
                                 <div class="col-lg-1 pt-2 pb-2"><span>Ke</span></div>
                                 <div class="col-lg-5">
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select class="form-select" aria-label="Default select example" name="lok_akhir">
                                         <option selected>Tujuan Akhir</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                        <?php foreach ($stasiun as $row): ?>
+                                            <option value="<?= $row['id']; ?>"><?= $row['n_stasiun']; ?></option>
+                                        <?php endforeach; ?>
                                     </select>
                                 </div>
                                 <div class="col-lg-1 search">
                                     <button class="btn btn-brand rounded pb-2 pt-2"><i class="bi bi-search" style="font-weight: bold;"></i></button>
                                 </div>
                             </div>
+                        </form>
                         </div>
                     </div>
                 </div>
