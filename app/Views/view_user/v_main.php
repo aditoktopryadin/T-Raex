@@ -75,21 +75,25 @@
                         <form method="post" action="<?= base_url('user/cari'); ?>">
                             <div class="row">
                                 <div class="col-lg-5">
-                                    <select class="form-select" aria-label="Default select example" name="lok_awal">
-                                        <option selected>Tujuan Awal</option>
-                                        <?php foreach ($stasiun as $row): ?>
-                                            <option value="<?= $row['id']; ?>"><?= $row['n_stasiun']; ?></option>
-                                        <?php endforeach; ?>
-                                    </select>
+                                <select class="form-select" aria-label="Default select example" name="lok_awal">
+                                    <option selected>Tujuan Awal</option>
+                                    <?php foreach ($stasiun as $row): ?>
+                                        <option value="<?= $row->id ?>">
+                                            <?= $row->n_stasiun; ?>
+                                        </option>
+                                    <?php endforeach; ?>
+                                </select>
                                 </div>
                                 <div class="col-lg-1 pt-2 pb-2"><span>Ke</span></div>
                                 <div class="col-lg-5">
-                                    <select class="form-select" aria-label="Default select example" name="lok_akhir">
-                                        <option selected>Tujuan Akhir</option>
-                                        <?php foreach ($stasiun as $row): ?>
-                                            <option value="<?= $row['id']; ?>"><?= $row['n_stasiun']; ?></option>
-                                        <?php endforeach; ?>
-                                    </select>
+                                <select class="form-select" aria-label="Default select example" name="lok_akhir">
+                                    <option selected>Tujuan Akhir</option>
+                                    <?php foreach ($stasiun as $row): ?>
+                                        <option value="<?= $row->id ?>">
+                                        <?= $row->n_stasiun; ?>
+                                    </option>
+                                    <?php endforeach; ?>
+                                </select>
                                 </div>
                                 <div class="col-lg-1 search">
                                     <button class="btn btn-brand rounded pb-2 pt-2"><i class="bi bi-search" style="font-weight: bold;"></i></button>

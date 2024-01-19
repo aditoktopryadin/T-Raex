@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jan 17, 2024 at 06:47 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Host: localhost:3310
+-- Generation Time: Jan 19, 2024 at 03:05 PM
+-- Server version: 8.0.30
+-- PHP Version: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,8 +28,8 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `tb_rute` (
-  `id` int(11) NOT NULL,
-  `n_rute` varchar(100) NOT NULL
+  `id` int NOT NULL,
+  `n_rute` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -53,8 +53,8 @@ INSERT INTO `tb_rute` (`id`, `n_rute`) VALUES
 --
 
 CREATE TABLE `tb_stasiun` (
-  `id` int(11) NOT NULL,
-  `n_stasiun` varchar(100) NOT NULL
+  `id` int NOT NULL,
+  `n_stasiun` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -173,33 +173,44 @@ INSERT INTO `tb_stasiun` (`id`, `n_stasiun`) VALUES
 --
 
 CREATE TABLE `tb_urutan` (
-  `id` int(11) NOT NULL,
-  `id_stasiun` int(11) DEFAULT NULL,
-  `id_rute` int(11) DEFAULT NULL,
-  `urutan` int(11) DEFAULT NULL
+  `id` int NOT NULL,
+  `id_stasiun` int DEFAULT NULL,
+  `id_rute` int DEFAULT NULL,
+  `urutan` int DEFAULT NULL,
+  `waktu` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `tb_urutan`
 --
 
-INSERT INTO `tb_urutan` (`id`, `id_stasiun`, `id_rute`, `urutan`) VALUES
-(1, 93, 7, 1),
-(2, 92, 7, 2),
-(3, 5, 7, 3),
-(4, 91, 7, 4),
-(5, 90, 7, 5),
-(6, 89, 7, 6),
-(7, 88, 7, 7),
-(8, 87, 7, 8),
-(9, 86, 7, 9),
-(10, 85, 7, 10),
-(11, 4, 7, 11),
-(12, 1, 8, 1),
-(13, 5, 8, 2),
-(14, 4, 8, 3),
-(15, 2, 8, 4),
-(16, 1, 8, 5);
+INSERT INTO `tb_urutan` (`id`, `id_stasiun`, `id_rute`, `urutan`, `waktu`) VALUES
+(1, 47, 4, 1, 2),
+(2, 1, 4, 2, 6),
+(3, 46, 4, 3, 4),
+(4, 2, 4, 4, 1),
+(5, 45, 4, 5, 1),
+(6, 3, 4, 6, 6),
+(7, 4, 4, 7, 8),
+(8, 44, 4, 8, 5),
+(9, 43, 4, 9, 8),
+(10, 42, 4, 10, 3),
+(11, 41, 4, 11, 5),
+(12, 40, 4, 12, 5),
+(13, 39, 4, 13, 2),
+(14, 38, 4, 14, 1),
+(15, 37, 4, 15, 2),
+(16, 36, 4, 16, 8),
+(17, 1, 3, 1, 2),
+(18, 14, 3, 2, 2),
+(19, 13, 3, 3, 2),
+(20, 11, 3, 4, 6),
+(21, 10, 3, 5, 1),
+(22, 9, 3, 6, 1),
+(23, 8, 3, 7, 7),
+(24, 7, 3, 8, 3),
+(25, 7, 6, 1, 6),
+(26, 43, 6, 2, 0);
 
 -- --------------------------------------------------------
 
@@ -208,10 +219,10 @@ INSERT INTO `tb_urutan` (`id`, `id_stasiun`, `id_rute`, `urutan`) VALUES
 --
 
 CREATE TABLE `tb_users` (
-  `id` int(11) NOT NULL,
-  `n_user` varchar(100) NOT NULL,
-  `uname` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL
+  `id` int NOT NULL,
+  `n_user` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `uname` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -261,25 +272,25 @@ ALTER TABLE `tb_users`
 -- AUTO_INCREMENT for table `tb_rute`
 --
 ALTER TABLE `tb_rute`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `tb_stasiun`
 --
 ALTER TABLE `tb_stasiun`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=114;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=114;
 
 --
 -- AUTO_INCREMENT for table `tb_urutan`
 --
 ALTER TABLE `tb_urutan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `tb_users`
 --
 ALTER TABLE `tb_users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Constraints for dumped tables
