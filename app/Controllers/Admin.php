@@ -190,14 +190,18 @@ class Admin extends BaseController
     public function urutan()
     {
         $builder = $this->db->table('tb_urutan');
-        $builder->select('*');
+        $builder->select('tb_urutan.id as id , n_stasiun, n_rute, urutan');
         $builder->join('tb_stasiun', 'tb_stasiun.id = tb_urutan.id_stasiun');
         $builder->join('tb_rute', 'tb_rute.id = tb_urutan.id_rute');
         $query = $builder->get()->getResultArray();
         // var_dump($query);
-        // // $data_urutan = $this->urutan->findAll();
+        //Mengambil data stasiun dan rute dari tb stasiun dan tb rute
+        $data_stasiun = $this->stasiun->findAll();
+        $data_rute = $this->rute->findAll();
         $data = [
             'urutan' => $query,
+            'stasiun' => $data_stasiun,
+            'rute' => $data_rute,
             'menu' => 'Kereta',
             'submenu' => 'Urutan'
         ];
@@ -208,6 +212,8 @@ class Admin extends BaseController
     {
         $getUrutan = $this->request->getPost();
         $this->urutan->save([
+            'id_stasiun' => $getUrutan['stasiun'],
+            'id_rute' => $getUrutan['rute'],
             'urutan' => $getUrutan['urutan'],
         ]);
 
@@ -219,9 +225,10 @@ class Admin extends BaseController
     public function edit_urutan($id)
     {
         $getUrutan = $this->request->getPost();
+        //echo "ini data id: " . $id;
         $this->urutan->save([
             'id' => $id,
-            'urutan' => $getUrutan['urutan']
+            'urutan' => $getUrutan['urutan'],
         ]);
 
         session()->setFlashdata('norm_pesan', 'Edit Data Urutan');

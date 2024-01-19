@@ -1,0 +1,267 @@
+INFO - 2024-01-19 04:32:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 04:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 04:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 04:33:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 04:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-19 04:48:07 --> Undefined variable $data_urutan
+in APPPATH\Views\view_admin\v_urutan.php on line 55.
+ 1 APPPATH\Views\view_admin\v_urutan.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data_urutan', 'C:\\laragon\\www\\T-Raex\\app\\Views\\view_admin\\v_urutan.php', 55)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\T-Raex\\app\\Views\\view_admin\\v_urutan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('view_admin/v_urutan', [], true)
+ 5 APPPATH\Controllers\Admin.php(204): view('view_admin/v_urutan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->urutan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-19 04:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 04:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 04:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 04:53:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 04:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 04:55:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 06:03:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 06:11:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-19 06:11:08 --> Undefined array key "n_rute"
+in APPPATH\Views\view_admin\v_urutan.php on line 67.
+ 1 APPPATH\Views\view_admin\v_urutan.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "n_rute"', 'C:\\laragon\\www\\T-Raex\\app\\Views\\view_admin\\v_urutan.php', 67)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\T-Raex\\app\\Views\\view_admin\\v_urutan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('view_admin/v_urutan', [], true)
+ 5 APPPATH\Controllers\Admin.php(205): view('view_admin/v_urutan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->urutan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-19 06:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-19 06:13:08 --> Undefined array key "n_stasiun"
+in APPPATH\Views\view_admin\v_urutan.php on line 56.
+ 1 APPPATH\Views\view_admin\v_urutan.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "n_stasiun"', 'C:\\laragon\\www\\T-Raex\\app\\Views\\view_admin\\v_urutan.php', 56)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\T-Raex\\app\\Views\\view_admin\\v_urutan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('view_admin/v_urutan', [], true)
+ 5 APPPATH\Controllers\Admin.php(208): view('view_admin/v_urutan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->urutan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-19 06:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-19 06:14:03 --> Undefined array key "n_stasiun"
+in APPPATH\Views\view_admin\v_urutan.php on line 56.
+ 1 APPPATH\Views\view_admin\v_urutan.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "n_stasiun"', 'C:\\laragon\\www\\T-Raex\\app\\Views\\view_admin\\v_urutan.php', 56)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\T-Raex\\app\\Views\\view_admin\\v_urutan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('view_admin/v_urutan', [], true)
+ 5 APPPATH\Controllers\Admin.php(208): view('view_admin/v_urutan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->urutan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-19 06:14:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 06:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 06:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 06:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 06:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 06:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 06:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 06:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 06:44:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 06:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 06:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 06:45:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 06:46:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 06:53:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 06:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-19 06:59:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`traex`.`tb_urutan`, CONSTRAINT `Relasi_Stasiun` FOREIGN KEY (`id_stasiun`) REFERENCES `tb_stasiun` (`id`)) in C:\laragon\www\T-Raex\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\T-Raex\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_urut...', 0)
+#1 C:\laragon\www\T-Raex\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_urut...')
+#2 C:\laragon\www\T-Raex\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_urut...')
+#3 C:\laragon\www\T-Raex\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_urut...', Array, false)
+#4 C:\laragon\www\T-Raex\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\T-Raex\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\T-Raex\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\T-Raex\system\BaseModel.php(690): CodeIgniter\Model->update('1', Array)
+#8 C:\laragon\www\T-Raex\app\Controllers\Admin.php(232): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\T-Raex\system\CodeIgniter.php(932): App\Controllers\Admin->edit_urutan('1')
+#10 C:\laragon\www\T-Raex\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\laragon\www\T-Raex\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\T-Raex\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-19 06:59:49 --> Cannot add or update a child row: a foreign key constraint fails (`traex`.`tb_urutan`, CONSTRAINT `Relasi_Stasiun` FOREIGN KEY (`id_stasiun`) REFERENCES `tb_stasiun` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_urutan` SET `id_stasiun` = \'MANGGARAI\', `id_rute` = \'Commuter Line Basoeta\', `urutan` = \'22\'
+WHERE `tb_urutan`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_urutan` SET `id_stasiun` = \'MANGGARAI\', `id_rute` = \'Commuter Line Basoeta\', `urutan` = \'22\'
+WHERE `tb_urutan`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_urutan` SET `id_stasiun` = \'MANGGARAI\', `id_rute` = \'Commuter Line Basoeta\', `urutan` = \'22\'
+WHERE `tb_urutan`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_urutan` SET `id_stasiun` = :id_stasiun:, `id_rute` = :id_rute:, `urutan` = :urutan:
+WHERE `tb_urutan`.`id` IN :tb_urutan.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 SYSTEMPATH\BaseModel.php(690): CodeIgniter\Model->update('1', [...])
+ 9 APPPATH\Controllers\Admin.php(232): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->edit_urutan('1')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-19 07:01:49 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`traex`.`tb_urutan`, CONSTRAINT `Relasi_Stasiun` FOREIGN KEY (`id_stasiun`) REFERENCES `tb_stasiun` (`id`)) in C:\laragon\www\T-Raex\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\T-Raex\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_urut...', 0)
+#1 C:\laragon\www\T-Raex\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_urut...')
+#2 C:\laragon\www\T-Raex\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_urut...')
+#3 C:\laragon\www\T-Raex\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_urut...', Array, false)
+#4 C:\laragon\www\T-Raex\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\T-Raex\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\T-Raex\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\T-Raex\system\BaseModel.php(690): CodeIgniter\Model->update('1', Array)
+#8 C:\laragon\www\T-Raex\app\Controllers\Admin.php(232): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\T-Raex\system\CodeIgniter.php(932): App\Controllers\Admin->edit_urutan('1')
+#10 C:\laragon\www\T-Raex\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\laragon\www\T-Raex\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\T-Raex\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-19 07:01:49 --> Cannot add or update a child row: a foreign key constraint fails (`traex`.`tb_urutan`, CONSTRAINT `Relasi_Stasiun` FOREIGN KEY (`id_stasiun`) REFERENCES `tb_stasiun` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_urutan` SET `id_stasiun` = \'MANGGARAI\', `id_rute` = \'Commuter Line Basoeta\', `urutan` = \'22\'
+WHERE `tb_urutan`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_urutan` SET `id_stasiun` = \'MANGGARAI\', `id_rute` = \'Commuter Line Basoeta\', `urutan` = \'22\'
+WHERE `tb_urutan`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_urutan` SET `id_stasiun` = \'MANGGARAI\', `id_rute` = \'Commuter Line Basoeta\', `urutan` = \'22\'
+WHERE `tb_urutan`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_urutan` SET `id_stasiun` = :id_stasiun:, `id_rute` = :id_rute:, `urutan` = :urutan:
+WHERE `tb_urutan`.`id` IN :tb_urutan.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 SYSTEMPATH\BaseModel.php(690): CodeIgniter\Model->update('1', [...])
+ 9 APPPATH\Controllers\Admin.php(232): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->edit_urutan('1')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-19 07:01:55 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`traex`.`tb_urutan`, CONSTRAINT `Relasi_Stasiun` FOREIGN KEY (`id_stasiun`) REFERENCES `tb_stasiun` (`id`)) in C:\laragon\www\T-Raex\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\laragon\www\T-Raex\system\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_urut...', 0)
+#1 C:\laragon\www\T-Raex\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_urut...')
+#2 C:\laragon\www\T-Raex\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_urut...')
+#3 C:\laragon\www\T-Raex\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_urut...', Array, false)
+#4 C:\laragon\www\T-Raex\system\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\T-Raex\system\BaseModel.php(943): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\T-Raex\system\Model.php(756): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\T-Raex\system\BaseModel.php(690): CodeIgniter\Model->update('1', Array)
+#8 C:\laragon\www\T-Raex\app\Controllers\Admin.php(232): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\T-Raex\system\CodeIgniter.php(932): App\Controllers\Admin->edit_urutan('1')
+#10 C:\laragon\www\T-Raex\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#11 C:\laragon\www\T-Raex\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\T-Raex\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-01-19 07:01:55 --> Cannot add or update a child row: a foreign key constraint fails (`traex`.`tb_urutan`, CONSTRAINT `Relasi_Stasiun` FOREIGN KEY (`id_stasiun`) REFERENCES `tb_stasiun` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('UPDATE `tb_urutan` SET `id_stasiun` = \'MANGGARAI\', `id_rute` = \'Commuter Line Basoeta\', `urutan` = \'22\'
+WHERE `tb_urutan`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tb_urutan` SET `id_stasiun` = \'MANGGARAI\', `id_rute` = \'Commuter Line Basoeta\', `urutan` = \'22\'
+WHERE `tb_urutan`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tb_urutan` SET `id_stasiun` = \'MANGGARAI\', `id_rute` = \'Commuter Line Basoeta\', `urutan` = \'22\'
+WHERE `tb_urutan`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `tb_urutan` SET `id_stasiun` = :id_stasiun:, `id_rute` = :id_rute:, `urutan` = :urutan:
+WHERE `tb_urutan`.`id` IN :tb_urutan.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(396): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(943): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [...])
+ 8 SYSTEMPATH\BaseModel.php(690): CodeIgniter\Model->update('1', [...])
+ 9 APPPATH\Controllers\Admin.php(232): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->edit_urutan('1')
+11 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+12 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-19 07:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-19 07:09:05 --> Undefined array key "stasiun"
+in APPPATH\Views\view_admin\v_urutan.php on line 124.
+ 1 APPPATH\Views\view_admin\v_urutan.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "stasiun"', 'C:\\laragon\\www\\T-Raex\\app\\Views\\view_admin\\v_urutan.php', 124)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\T-Raex\\app\\Views\\view_admin\\v_urutan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('view_admin/v_urutan', [], true)
+ 5 APPPATH\Controllers\Admin.php(208): view('view_admin/v_urutan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->urutan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-19 07:13:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:20:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-19 07:21:30 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], [])
+ 3 SYSTEMPATH\BaseModel.php(690): CodeIgniter\Model->update('1', [...])
+ 4 APPPATH\Controllers\Admin.php(230): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->edit_urutan('1')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-19 07:28:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:28:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:34:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-19 07:49:21 --> syntax error, unexpected token ")", expecting variable or "{" or "$"
+in APPPATH\Views\view_admin\v_urutan.php on line 101.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('view_admin/v_urutan', [], true)
+ 3 APPPATH\Controllers\Admin.php(208): view('view_admin/v_urutan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->urutan()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-19 07:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:53:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:53:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:53:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 07:57:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-19 08:03:53 --> Undefined array key "tb_urutan.id"
+in APPPATH\Views\view_admin\v_urutan.php on line 111.
+ 1 APPPATH\Views\view_admin\v_urutan.php(111): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tb_urutan.id"', 'C:\\laragon\\www\\T-Raex\\app\\Views\\view_admin\\v_urutan.php', 111)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\laragon\\www\\T-Raex\\app\\Views\\view_admin\\v_urutan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('view_admin/v_urutan', [], true)
+ 5 APPPATH\Controllers\Admin.php(208): view('view_admin/v_urutan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin->urutan()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-19 08:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:16:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:47:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:49:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-19 08:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
